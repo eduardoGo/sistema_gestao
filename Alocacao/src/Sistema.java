@@ -62,7 +62,7 @@ public class Sistema {
                     break;
                 case 3:
                     if(verificaLogin){
-                        if(usuarioLogado.getTipo().intern() == "Professor" &&
+                        if((usuarioLogado.getTipo().intern() == "Professor" || usuarioLogado.getTipo().intern() == "Pesquisador") &&
                                 usuarioLogado.getRecursoAssociado().intern() == "nenhum"){
 
 
